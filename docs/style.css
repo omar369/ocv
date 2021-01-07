@@ -3,36 +3,90 @@ body{
     padding: 0;
 }
 
-header{
+.texto-header{
     position: absolute;
-    background-image: url("./molino.JPG");
+    width: 40%;
+    height: 100%;
+    padding-top: 2.5em;
+    padding-left: 2.5em;
+    padding-right: 0.5em;
+}
+
+.texto-header p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+    font-size: 72px;
+    color: #88e9ff98;
+}
+
+.header-animation{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.moondesk {
+    position: absolute;
     background-size: cover;
     width: 100%;
-    height: 27em;
+    height: 100%;
+    left: 20%;
     z-index: 1;
 }
 
-#welcome-title{
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    height: 25em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3e5c5773;
-    color: aliceblue;
+#roca1{
+    background-image: url("./images/roca1.png");
+    animation: floating 1.9s ease-in-out forwards infinite alternate;
+}
+#desk{
+    background-image: url("./images/escritorio.png");
+    animation: floating 1.95s ease-in-out forwards infinite alternate;
+}
+#pantalla{
+    background-image: url("./images/pantalla.png");
+    animation: floating 2s ease-in-out forwards infinite alternate;
+}
+#bocinaL{
+    background-image: url("./images/bocinaL.png");
+    animation: floating 1.85s ease-in-out forwards infinite alternate;
+}
+#bocinaR{
+    background-image: url("./images/bocinaR.png");
+    animation: floating 2.05s ease-in-out forwards infinite alternate;
+}
+#trastes{
+    background-image: url("./images/trastes.png");
+    animation: floating 1.93s ease-in-out forwards infinite alternate;
+}
+#libros{
+    background-image: url("./images/libros.png");
+    animation: floating 2.1s ease-in-out forwards infinite alternate;
+}
+#silla{
+    background-image: url("./images/silla2.png");
+    animation: floating 1.88s ease-in-out forwards infinite alternate;
+}
+#roca2{
+    background-image: url("./images/roca2.png");
+    animation: floating 1.82s ease-in-out forwards infinite alternate;
+}
+#roca3{
+    background-image: url("./images/roca3.png");
+    animation: floating 2.08s ease-in-out forwards infinite alternate;
+}
+#roca4{
+    background-image: url("./images/roca4.png");
+    animation: floating 1.78s ease-in-out forwards infinite alternate;
 }
 
-#sub-title{
-    position: absolute;
-    z-index: 11;
-    top: 25em;
-    width: 100%;
-    height: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3e5c5773;
-    color: aliceblue;
+@keyframes floating {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
 }
