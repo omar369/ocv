@@ -3,10 +3,12 @@
 body{
     margin: 0;
     padding: 0;
+    background: salmon;
 }
 
 .main{
     position: absolute;
+    z-index:0;
     width: 100%;
     height: 100%;
     background-color: black;
@@ -27,11 +29,6 @@ body{
     text-align: right;
     font-size: 72px;
     color: #88e9ff98;
-}
-
-.header-animation{
-    
-    background-size: cover;
 }
 
 .moondesk {
